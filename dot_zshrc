@@ -131,6 +131,7 @@ alias vimdiff="nvim -d"
 alias reload="source ~/.zshrc"
 
 source /opt/ros/humble/setup.zsh
+source /home/pasta/development/redback_ws/install/setup.zsh
 
 #echo "$(fzf --version)"
 eval "$(fzf --zsh)"
