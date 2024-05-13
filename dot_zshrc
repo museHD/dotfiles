@@ -127,6 +127,7 @@ export NVM_DIR="$HOME/.nvm"
 
 eval $(thefuck --alias)
 alias vim=nvim
+alias vimdiff="nvim -d"
 alias reload="source ~/.zshrc"
 
 source /opt/ros/humble/setup.zsh
