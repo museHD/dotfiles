@@ -6,11 +6,12 @@ return {
         -- install jsregexp (optional!).
         build = "make install_jsregexp",
 
-        dependencies = { "rafamadriz/friendly-snippets" },
+        dependencies = { "rafamadriz/friendly-snippets", "saadparwaiz1/cmp_luasnip" },
 
         config = function()
             local ls = require("luasnip")
-            ls.filetype_extend("javascript", { "jsdoc" })
+            require("luasnip.loaders.from_vscode").lazy_load()
+            -- ls.filetype_extend("javascript", { "jsdoc" })
 
             --- TODO: What is expand?
             vim.keymap.set({"i"}, "<C-s>e", function() ls.expand() end, {silent = true})

@@ -24,10 +24,13 @@ vim.opt.scrolloff = 8
 vim.optsigncolumn = "yes"
 vim.opt.isfname:append("@-@")
 
+-- sync vim clipboard with os
+vim.opt.clipboard = 'unnamedplus'
 vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
+
 
 vim.g.netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
