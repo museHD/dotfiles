@@ -129,9 +129,14 @@ eval $(thefuck --alias)
 alias vim=nvim
 alias vimdiff="nvim -d"
 alias reload="source ~/.zshrc"
+alias o="gio open ." #open file explorer
+
+alias blankbash=" env -i PATH=/usr/bin:/bin "TERM=$TERM" "HOME=$HOME" bash --noprofile --norc"
+
+export EUFS_MASTER=/home/pasta/Programming/Redback/src/eufs_sim_rb
 
 source /opt/ros/humble/setup.zsh
-source /home/pasta/development/redback_ws/install/setup.zsh
+source /home/pasta/development/redback_ws/install/local_setup.zsh
 
 #echo "$(fzf --version)"
 eval "$(fzf --zsh)"
